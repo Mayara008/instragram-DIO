@@ -1,0 +1,49 @@
+/* O * é para pegar todo o documento */
+/* Tem certas configurações que são padrões */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(red, green, blue);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.instragram-wrapper{
+    /* Quando vc utiliza o (display:flex) em uma container, ele vira flex container, ou seja, é um container onde todos os itens que estiver dentro dele vão ficar em linha, ocupando o maior espaço dentro daquela linha ou até chegar a borda, na verdade eles continuam passando. VAI OCUPAR TUDO EM LINHA, OCUPANDO TODO O ESTAMOS DISPONIVEL. ELE SEMPRE VAI ALINHAR OS ITENS EM LINHA. */
+    display: flex;
+    /* (align-items) ALINHAMENTO VERTICAL DOS ITENS, Como o display flex vai ajustar em coluna, o align-item vai ser na vertical, um ao lado do outro, ou seja, NA VERTICAL ELE VAI FICAR NO CENTRO do eixo y. */
+    align-items: center;
+    /* (justify-content) Eixo x, se trata em linha que também vai ficar no centro. */
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+.instagram-phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.instagram-phone img{
+    height: 45rem;
+}
+
+/* --------- container direita ---------- */
+.instagram-continue{
+    display: flex;
+    align-items: center;
+    /* (space-around) vai ser isso pq existe uma propriedade chamada flex-direction,    */
+    justify-content: space-around;
+    /* está relacionadoc om o space-around */
+    flex-direction: column;
+    /* Nesse o eixo acabou sendo mudado. */
+}
